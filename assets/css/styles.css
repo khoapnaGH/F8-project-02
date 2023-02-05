@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-family: "Sen", sans-serif;
+}
