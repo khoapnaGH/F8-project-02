@@ -44,6 +44,36 @@ a {
     opacity: 0.9;
 }
 
+.heading {
+    font-weight: 700;
+    font-family: var(--heading-font);
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.desc {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* Header */
 .header {
     padding-top: 36px;
@@ -122,6 +152,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .hero .media-block .hero-summary {
@@ -177,22 +208,14 @@ a {
     color: #171100;
 }
 
-.hero .content-block .title {
+.heading.lv1 {
     margin-bottom: 22px;
-    font-weight: 700;
     font-size: 5.8rem;
-    font-family: var(--heading-font);
     line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 
-.hero .content-block .desc {
+.desc.hero-desc {
     margin-top: 8px;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #5f5b53;
 }
 
 .hero .content-block .cta {
@@ -220,6 +243,7 @@ a {
     display: flex;
     gap: 14px;
     align-items: center;
+    cursor: pointer;
 }
 
 .hero .watch-video .play {
@@ -253,4 +277,136 @@ a {
 
 .hero .desc.desc-stats {
     margin-left: -24px;
+}
+
+/* Popular */
+.popular {
+    padding: 65px 0;
+    margin: 135px 0;
+}
+
+.popular .popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.popular .desc.popular-desc {
+    margin-top: 16px;
+    width: 458px;
+}
+
+.popular .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.popular .controls .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffb900;
+    background-color: #fff;
+    color: #ffb900;
+}
+
+.popular .controls .control-btn:hover {
+    color: #fff;
+    background-color: #ffb900;
+    cursor: pointer;
+}
+
+.popular .course-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular .course-item {
+    flex: 1;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+
+.popular .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .thumb {
+    width: calc(100% + 2px);
+    margin: -1px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .course-item .info {
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .course-item .title a {
+    padding-right: 8px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .course-item .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.popular .course-item .point {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.popular .desc.course-desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.popular .course-item .foot {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .foot .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .book-btn {
+    border: none;
+}
+
+.popular .book-btn:hover {
+    background: #ffb900;
+    cursor: pointer;
 }
