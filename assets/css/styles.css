@@ -422,9 +422,6 @@ a {
     background: #2e2100;
 }
 
-.feedback .main-content {
-}
-
 .feedback .feedback-list {
     display: flex;
     overflow: hidden;
@@ -493,4 +490,54 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* feature */
+.feature {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.feature .images {
+    display: flex;
+    gap: 30px;
+}
+
+.feature .images .image {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .images .image:nth-child(1) {
+    margin-top: 34px;
+}
+
+.feature .images .image:nth-child(2) {
+    margin-bottom: 34px;
+}
+
+.feature .feature-content {
+    width: 41%;
+}
+
+.feature .feature-content .desc {
+    margin: 16px 0;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.feature .feature-content .btn {
+    margin-top: 16px;
+    min-width: 137px;
+    background: #ffb900;
+    border: none;
 }
