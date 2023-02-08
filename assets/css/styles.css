@@ -404,9 +404,93 @@ a {
 
 .popular .book-btn {
     border: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #ffffff;
 }
 
 .popular .book-btn:hover {
     background: #ffb900;
     cursor: pointer;
+}
+
+/* feedback */
+.feedback {
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback .main-content {
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all ease 0.3s;
+    transform: translateX(-100%);
+}
+
+.feedback .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .info .title {
+    margin-top: 18px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback .info .desc {
+    margin-top: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback .info .dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.feedback .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback .dot.active {
+    background: #ffb900;
+    cursor: default;
+}
+
+.feedback .quotes-block {
+    width: 66%;
+}
+
+.feedback .quotes-block .quote {
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
 }
